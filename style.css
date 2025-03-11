@@ -1,0 +1,138 @@
+.button {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 24px;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(92, 124, 172);
+    border: 2px solid rgb(99, 115, 169);
+    border-radius: 34px;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+  }
+  
+  .button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 20px;
+    height: 20px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: rgb(132, 138, 193);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .button:hover::before {
+    scale: 3;
+  }
+  
+  .button:hover {
+    color: #212121;
+    scale: 1.1;
+    box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+  }
+  
+  .button:active {
+    scale: 1;
+  }
+
+  .social-links a{
+    display:flexbox;
+    margin-right: 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-links a:hover{
+    color: #382a69;
+}
+
+
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: black;   
+            padding: 20px;
+            
+  }
+  
+  * {
+    box-sizing:content-box;
+  }
+  
+  /* Add padding to containers */
+  .container {
+    padding: 25px;
+    background-color: rgb(202, 220, 247);
+    opacity: 78%;
+  }
+  
+  /* Full-width input fields */
+  input[type=text], input[type=date]  {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 22px 0;
+    display: flex;
+    border: none;
+    background: none;
+  }
+  
+  input[type=text]:focus, input[type=date]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Overwrite default styles of hr */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  /* Set a style for the submit button */
+  .registerbtn {
+    background-color: #41407c;
+    color:white;
+    padding: 16px 20px;
+    margin: 5px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .registerbtn:hover {
+    opacity: 1;
+  }
+  
+  /* Add a blue text color to links */
+  a {
+    color: rgb(55, 33, 151);
+  }
+  
+  /* Set a grey background color and center the text of the "sign in" section */
+  .signin {
+    background-color: #f1f1f1;
+    text-align: center;
+  }
+   img{ 
+     border: 1px solid #ccc;  
+    border-radius: 8px;      
+    background-color: #fff;
+    display: flexbox;
+    justify-content: center; 
+    padding: 20px;
+    gap: 20px;
+    max-width: 100%;         
+    height: auto;
+    width: 150px;
+   }
+
+   footer{
+    background-color: #9796f0;
+    opacity: 87%;
+   }

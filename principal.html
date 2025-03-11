@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaiFora</title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<style>
+    body{
+    background-image: url('banner.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size:cover;
+    
+}
+</style>
+<body>
+
+     <!-- Código de leitura em Libras -->
+
+    <!-- inicio ACESSIBILIDADE EM LIBRAS -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <!-- fim ACESSIBILIDADE EM LIBRAS -->
+
+
+    
+    <div class="flex items-center gap-2">
+        <button class="button">
+          <a style="color: black;" href="principal.html">Home</a>
+         </button>
+  
+         <button class="button">
+           <a style="color: black;" href="cadastroFun.html">Cadastro Funcionário</a>
+         </button>
+
+         <button class="button">
+          <a style="color: black;" href="index.html">login</a>
+         </button>
+  
+         <button class="button">
+         <a style="color: black;" href="">Produtos</a>
+        </button>
+  
+        <button class="button">
+          <a style="color: black;" href="">Promoções</a>
+        </button>
+  
+        <button class="button">
+          <a style="color: black;" href="">Eventos</a>
+        </button>
+
+       <!-- <div class="slider">
+            <div class="slides">
+              <div class="slide">
+                <img src="" alt="">
+                </div>
+                <div class="slide">
+                  <img src="" alt="">
+                </div>
+                <div class="slide">
+                  <img src="" alt="">
+                </div>
+                <div class="slide">
+                  <img src="" alt="">
+                </div>
+                <div class="slide">
+                  <img src="" alt="">
+                </div>
+                <div class="slide">
+                  <img src="" alt="">
+                </div>
+                <div class="slide">
+                  <img src="" alt="">
+                </div>
+           </div>-->
+
+           <h1 style="text-align: center; " >Alguns de nossos produtos:</h1>
+           <div class="foto-container" style="text-align: center; display: inline-flexbox; ">
+           <img src="poMM.png" alt="Pó compacto Mari Maria">
+           <div class="legenda"> Pó compacto Mari Maria </div>
+           <img src="melu.png" alt="">
+           <div class="legenda"> Bronzer Melu </div>
+           <img src="avon.png" alt="">
+           <div class="legenda"> Blush Avon </div>
+          </div>
+</body>
+<footer>
+    <p>Acompanhe nossas redes sociais!</p>
+</footer>
+</html>
